@@ -56,7 +56,7 @@ class _HomeState extends State<Home> {
             title: Text("Learning Bloc", style: TextStyle(color: Colors.white)),
             actions: [
               IconButton(onPressed: (){homeBloc.add(HomeWishlistButtonNavigateEvent());}, icon: Icon(Icons.favorite_outline),color: Colors.white,),
-              IconButton(onPressed: (){homeBloc.add(HomeWishlistButtonNavigateEvent());}, icon: Icon(Icons.shopping_bag_outlined),color: Colors.white,)
+              IconButton(onPressed: (){homeBloc.add(HomeCartButtonNavigateEvent());}, icon: Icon(Icons.shopping_bag_outlined),color: Colors.white,)
             ],
           ),
           body: ListView.builder(

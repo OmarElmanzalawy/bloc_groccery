@@ -52,6 +52,4 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
   FutureOr<void> homeCartButtonNavigateEvent(HomeCartButtonNavigateEvent event, Emitter<HomeState> emit) {
     emit(HomeNavigateToCartPageActionState());
   }
-
-  
 }
