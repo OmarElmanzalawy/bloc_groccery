@@ -1,4 +1,6 @@
+import 'package:bloc_groccery/features/cart/ui/cart.dart';
 import 'package:bloc_groccery/features/home/ui/home.dart';
+import 'package:bloc_groccery/features/wishlist/ui/wishlist.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +18,13 @@ class MainApp extends StatelessWidget {
         primaryColor: Colors.teal,
         // iconTheme: IconThemeData(color: Colors.white), 
       ),
-      home: Home()
+      // home: Home(),
+      initialRoute: '/home',
+      routes: {
+        '/home': (context) => Home(),
+        '/cart': (context) => Cart(),
+        '/wishlist': (context) => Wishlist(),
+      },
     );
   }
 }
